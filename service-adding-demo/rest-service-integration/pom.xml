@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.plugtree.ihealth</groupId>
+    <artifactId>service-adding-demo</artifactId>
+    <version>6.0.0.Beta.P3</version>
+  </parent>
+
+  <artifactId>rest-service-integration</artifactId>
+  <packaging>jar</packaging>
+
+  <name>Rest service generation</name>
+
+  <dependencies>
+    <!-- middleware dependencies -->
+    <dependency>
+      <groupId>javax.enterprise</groupId>
+      <artifactId>cdi-api</artifactId>
+      <version>1.0-SP4</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- Business central dependencies -->
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-kie-services</artifactId>
+      <version>${kie.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.drools</groupId>
+      <artifactId>drools-wb-rest</artifactId>
+      <version>${kie.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- Resteasy dependencies -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-jaxrs</artifactId>
+      <version>2.3.6.Final</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>jaxrs-api</artifactId>
+      <version>2.3.6.Final</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+</project>

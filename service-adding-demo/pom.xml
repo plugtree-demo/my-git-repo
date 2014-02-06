@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.plugtree.ihealth</groupId>  
+  <artifactId>service-adding-demo</artifactId>
+  <version>6.0.0.Beta.P3</version>
+  <packaging>pom</packaging>
+  <name>Adding new services to business-central</name>
+
+  <properties>
+    <kie.version>6.0.0.Final</kie.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.5.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <modules>
+    <module>rest-service-integration</module>
+    <module>kie-drools-wb-distribution-wars</module>
+  </modules>
+
+  <repositories>
+    <repository>
+      <id>jboss-repo</id>
+      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+    </repository>
+    <repository>
+      <url>http://repo1.maven.org/maven2/</url>
+      <id>central</id>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+
+
+</project>
+
